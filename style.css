@@ -114,7 +114,7 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        position: fixed;
+        position: unset;
         bottom: 0;
         padding: 10px;
         flex-direction: row;
