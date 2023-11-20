@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+    --color-rofraco: #c86dd7;
+    --color-roforte: #72337c;
+    --color-head2: #91ff5e;
+    --color-cinza: #c7c7c7;
+    --color-branco: #ffffff;
+    --color-preto: #000000;
+    --color-verde: #00ac09;
+    --color-emailbox: #dadada;
+    --color-head: #ff31dd;
+}
+
 /* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 /* Seção CTA */
@@ -18,7 +32,7 @@
     max-width: 1280px;
 
     border-radius: 24px;
-    background-color: #c7c7c7;
+    background-color: var(--color-head2);
     display: flex;
     flex-direction: row;
     justify-content: flex-start; /* Ajustado para começar do lado esquerdo */
@@ -46,14 +60,14 @@
 }
 
 .label {
-    color: #888b94;
-    font-size: 16px;
+    color: var(--color-preto);
+    font-size: 1.6em;
     font-weight: 500;
 }
 
 .head_right {
-    color: #000;
-    font-size: 36px;
+    color: var(--color-preto);
+    font-size: 2.2em;
     font-weight: 700;
     margin: 12px 0 20px;
 }
@@ -65,18 +79,16 @@
     align-items: center;
     margin-top: 20px;
     padding: 12px 20px;
-    border: 2px solid #c86dd7;
     border-radius: 5px;
-    background-color: #c86dd7;
-    color: #fff;
+    background-color: var(--color-verde);
+    color: var(--color-branco);
     font-size: 18px;
     transition: all 0.5s ease-in;
 }
 
 .btn_right:hover {
-    background-color: #72337c;
-    border-color: #72337c;
-    color: #fff;
+    background-color: var(--color-roforte);
+    color: var(--color-branco);
 }
 
 @media screen and (max-width: 870px) {
@@ -132,7 +144,7 @@
 
 .body_text {
     max-width: 782px;
-    color: #8a8a8a;
+    color: var(--color-preto);
     font-size: 18px;
     font-weight: 400;
     margin: 16px 0 32px;
@@ -151,22 +163,22 @@
     height: 48px;
     border: none;
     border-radius: 3px;
-    border: 1px solid #dadada;
+    border: 1px solid var(--color-emailbox);
     padding: 12px;
     transition: border-color 0.3s ease-in;
 }
 
 .message:focus {
-    border: 3px solid #555;
+    border: 3px solid var(--color-emailbox);
 }
 
 .btn_message {
     font-size: 16px;
-    color: #fff;
+    color: var(--color-branco);
     font-weight: 700;
     border: none;
     padding: 0 28px;
-    background: #c86dd7;
+    background: var(--color-roforte);
 }
 
 @media screen and (max-width: 780px) {
@@ -184,7 +196,7 @@
 }
 
 header {
-    background-color: #333;
+    background-color: var(--color-head);
 }
 
 /* Rodapé */
@@ -223,7 +235,7 @@ footer {
 }
 
 .footer-social a:hover {
-    color: #c86dd7;
+    color: var(--color-roforte);
 }
 
 .card_container {
