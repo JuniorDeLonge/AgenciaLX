@@ -8,8 +8,9 @@
     --color-branco: #ffffff;
     --color-preto: #000000;
     --color-verde: #00ac09;
-    --color-emailbox: #dadada;
+    --color-emailbox: #d3d3d3;
     --color-head: #ff31dd;
+    --color-footer: #161515;
 }
 
 /* Reset de estilos */
@@ -119,7 +120,7 @@
 .contactUs {
     width: 100%;
     height: 100vh;
-    background-color: #dadada;
+    background-color: var(--color-head2);
 }
 
 .content {
@@ -200,12 +201,170 @@ header {
     background-color: var(--color-head);
 }
 
-/* Rodapé */
+.card_container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 96px 48px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 360px;
+    padding: 12px;
+}
+
+.img_container {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.img_bg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+    flex: 1;
+}
+
+.card_text {
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+}
+
+.card_btn {
+    border-radius: 6px;
+    background-color: #a151cb;
+    padding: 6px 32px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    .card_container {
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 96px 24px;
+    }
+
+    .card {
+        max-width: 360px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card_container {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: none;
+    }
+}
+
+.card_container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 96px 48px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 360px;
+    padding: 12px;
+}
+
+.img_container {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.img_bg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+    flex: 1;
+}
+
+.card_text {
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+}
+
+.card_btn {
+    border-radius: 6px;
+    background-color: #a151cb;
+    padding: 6px 32px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    .card_container {
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 96px 24px;
+    }
+
+    .card {
+        max-width: 360px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card_container {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: none;
+    }
+}
+
+
 footer {
-    background-color: #333;
-    color: #c7c7c7;
-    padding: 2em;
+    background-color: var(--color-footer);
+    color: var(--color-cinza);
+    padding: 4em;
     text-align: center;
+}
+
+footer h3 {
+    color: var(--color-head2);
 }
 
 .footer-container {
@@ -215,180 +374,44 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
 }
 
 .footer-content,
 .footer-social {
     flex: 1;
+    margin: 10px; /* Adicione margens para espaçamento entre as seções */
 }
 
-.footer-content h3,
 .footer-social h3 {
     margin-bottom: 10px;
 }
 
-/* Estilize conforme necessário para seus ícones ou links sociais */
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
 .footer-social a {
-    color: #c7c7c7;
+    color: var(--color-cinza);
     margin-right: 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
 .footer-social a:hover {
-    color: var(--color-roforte);
+    color: var(--color-head2);
 }
+@media screen and (max-width: 600px) {
 
-.card_container {
+.footer-container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding: 96px 48px;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
-
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 100%;
-    max-width: 360px;
-    padding: 12px;
-}
-
-.img_container {
-    aspect-ratio: 4/3;
-    overflow: hidden;
-    border-radius: 24px;
-}
-
-.img_bg {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-}
-
-.card_content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: start;
-    flex: 1;
-}
-
-.card_text {
-    color: #666;
-    font-size: 16px;
-    font-weight: 500;
-    flex: 1;
-}
-
-.card_btn {
-    border-radius: 6px;
-    background-color: #a151cb;
-    padding: 6px 32px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-@media screen and (max-width: 1000px) {
-    .card_container {
-        flex-wrap: wrap;
-        gap: 18px;
-        padding: 96px 24px;
-    }
-
-    .card {
-        max-width: 360px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .card_container {
-        flex-direction: column;
-    }
-
-    .card {
-        max-width: none;
-    }
-}
-
-.card_container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 96px 48px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 100%;
-    max-width: 360px;
-    padding: 12px;
-}
-
-.img_container {
-    aspect-ratio: 4/3;
-    overflow: hidden;
-    border-radius: 24px;
-}
-
-.img_bg {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-}
-
-.card_content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: start;
-    flex: 1;
-}
-
-.card_text {
-    color: #666;
-    font-size: 16px;
-    font-weight: 500;
-    flex: 1;
-}
-
-.card_btn {
-    border-radius: 6px;
-    background-color: #a151cb;
-    padding: 6px 32px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-@media screen and (max-width: 1000px) {
-    .card_container {
-        flex-wrap: wrap;
-        gap: 18px;
-        padding: 96px 24px;
-    }
-
-    .card {
-        max-width: 360px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .card_container {
-        flex-direction: column;
-    }
-
-    .card {
-        max-width: none;
-    }
 }
